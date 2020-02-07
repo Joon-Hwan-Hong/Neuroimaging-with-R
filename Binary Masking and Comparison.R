@@ -4,7 +4,6 @@ library(oro.nifti)
 mridir <- paste(getwd(), "/kirby21/visit_1/113", sep="")
 
 # TEST for reading image
-file.path(mridir, "SUBJ001-01-MPRAGE.nii.gz")
 T1 <- readNIfTI(file.path(paste0(mridir,"/SUBJ0001-01-MPRAGE.nii.gz")))
 orthographic(T1)
 
